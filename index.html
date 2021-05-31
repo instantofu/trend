@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Boot Strap 5</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Bootstrap Scripts -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+</head>
+<body>
+
+    <section class="section-colored" id="title">
+
+        <div class="container-fluid">
+
+
+            <div>
+
+
+            <!-- Nav Bar -->
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <a class="navbar-brand" href="#">trendboard</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#start">Start</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#upload">Upload</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+          </nav>
+
+
+          <div class="row login">
+
+
+            <!-- Login -->
+
+            <form class="row g-3">
+              <div class="col-auto ms-auto">
+                <label for="exampleFormControlInput1" class="visually-hidden">E-Mail</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email address">
+              </div>
+              <div class="col-auto">
+                <label for="inputPassword2" class="visually-hidden">Password</label>
+                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+              </div>
+              <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+              </div>
+            </form>
+          </div>
+
+
+          <!-- Title -->
+
+          <div class="row" id="start">
+              <div class="col-lg-6">
+                <h1 class="big-heading">Trend Simplification</h1>
+                <p>- keep it simple</p>
+              </div>
+              <div class="col-lg-6 title-image-div">
+               <i class="bi-braces title-image"></i>
+              </div>
+          </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Form -->
+
+    <section class="section-form" id="upload">
+      <div class="container container-fluid">
+
+        <form class="form-style">
+
+          <!-- Meta Data -->
+          <h3 class="form-title">Meta Data Required</h3>
+
+          <div>
+            <div class="form-check form-check-inline mb-3">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required="required">
+              <label class="form-check-label" for="inlineRadio1">m</label>
+            </div>
+            <div class="form-check form-check-inline mb-3">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" required="required">
+              <label class="form-check-label" for="inlineRadio2">f</label>
+            </div>
+            <div class="form-check form-check-inline mb-3">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled required="required">
+              <label class="form-check-label" for="inlineRadio3">d</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group col-md-4 mb-3">
+              <input type="text" required="required" class="form-control" placeholder="First name">
+            </div>
+            <div class="form-group col-md-4 mb-3">
+              <input type="text" required="required" class="form-control" placeholder="Last name">
+            </div>
+            <div class="form-group col-md-4 mb-3">
+              <input type="email" required="required" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group col-md-4 mb-3">
+              <select id="inputState" required="required" class="form-control">
+                <option selected>Department</option>
+                <option>Business Unit 1</option>
+                <option>Business Unit 2</option>
+                <option>Business Unit 3</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4 mb-3">
+              <select id="inputState" required="required" class="form-control">
+                <option selected>Trend Week</option>
+                <option>CW52</option>
+                <option>CW51</option>
+                <option>CW50</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4 mb-3">
+              <input class="form-control" type="text" placeholder="2021" readonly>
+            </div>
+          </div>
+
+          
+
+          <!-- Trend Data -->
+          <h3 class="form-title">Trend Data Upload</h3>
+      
+
+          <div>
+            <div class="input-group mb-3">
+              <span class="input-group-text">Product A</span>
+              <input type="text" aria-label="Month 1" class="form-control" required="required">
+              <input type="text" aria-label="Month 2" class="form-control" required="required">
+              <input type="text" aria-label="Month 3" class="form-control" required="required">
+            </div>
+          </div>
+          <div>
+            <div class="input-group mb-3">
+              <span class="input-group-text">Product B</span>
+              <input type="text" aria-label="Month 1" class="form-control" required="required">
+              <input type="text" aria-label="Month 2" class="form-control" required="required">
+              <input type="text" aria-label="Month 3" class="form-control" required="required">
+            </div>
+          </div>
+          <div>
+            <div class="input-group mb-3">
+              <span class="input-group-text">Product C</span>
+              <input type="text" aria-label="Month 1" class="form-control" required="required">
+              <input type="text" aria-label="Month 2" class="form-control" required="required">
+              <input type="text" aria-label="Month 3" class="form-control" required="required">
+            </div>
+          </div>
+          <div>
+            <div class="input-group mb-3">
+              <span class="input-group-text">Product D</span>
+              <input type="text" aria-label="Month 1" class="form-control" required="required">
+              <input type="text" aria-label="Month 2" class="form-control" required="required">
+              <input type="text" aria-label="Month 3" class="form-control" required="required">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary me-md-2">Submit</button>
+        </form>
+
+        <div class="row">
+          <!-- Upload File -->
+          <h3 class="form-title">Upload File</h3>
+          <div class="col">
+            <div class="input-group mb-3">
+              <input type="file" class="form-control" id="inputGroupFile02">
+              <label class="input-group-text" for="inputGroupFile02">Upload</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+ 
+
+  <footer class="section-footer" id="footer">
+    <div class="container container-fluid">
+      <hr>
+      <a href="mailto:name@example.com"><i class="bi-envelope social-icon"></i></a>
+      <a href="#"><i class="bi-cup social-icon"></i></a>
+      <a href="#"><i class="bi-megaphone social-icon"></i></a>
+      <a href="#"><i class="bi-chat-dots social-icon"></i></a>
+      <p>[801]</p>
+    </div>
+  </footer>
+
+    
+</body>
+</html>
